@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heritage - Ministry of Culture, Government of India</title>
+  <link rel="stylesheet" href="style.css">
+<style>
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  color: #222;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+header {
+  border-top: 5px solid  #ff9933;
+  border-bottom: 3px solid #138808;
+  text-align: center;
+  padding: 20px 0;
+}
+.logo {
+             height: 60px;         
+             margin-right: 10px;
+             vertical-align: middle; 
+     
+}
+
+
+header h1 {
+  font-size: 28px;
+  color: #000;
+  margin-top: 15px;
+}
+
+
+nav {
+  background-color: #004b8d;
+  text-align: center;
+  padding: 8px 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 8px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background 0.3s;
+  padding: 10px 10px;
+  border-radius: 4px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #006bb3;
+  color: #fff;
+}
+
+
+hr {
+  border: 2px solid green;
+  margin: 0;
+  height: 2px;
+}
+.hero-section {
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(
+      rgba(0, 51, 102, 0.8),
+      rgba(0, 51, 102, 0.8)
+    ),
+    url('images/heritage_bg.jpg') center/cover no-repeat;
+  background-attachment: fixed;
+  border-top: 3px solid #0066cc;
+}
+
+.hero {
+  background: #36648B;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+section {
+  padding: 40px 80px;
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+section h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #003366;
+  border-bottom: 2px solid #004b8d;
+  display: inline-block;
+}
+
+section p {
+  color: #333;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+
+footer {
+  background-color: #00274d;
+  color: white;
+  text-align: center;
+  padding: 25px ;
+  
+}
+.gallery {
+  text-align: center;
+  padding: 40px 80px;
+  background-color: #f5f8ff;
+}
+
+.gallery h3 {
+  color: #003366;
+  font-size: 22px;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #004b8d;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  align-items: start;
+}
+
+.gallery-grid img {
+  width: 100%;
+  max-width: 320px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #f9f9f9;
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.card h4 {
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+/* Adjust gallery spacing */
+.gallery {
+  margin-top: 50px;
+  text-align: center;
+  padding: 40px 60px;
+  background-color: #f5f8ff;
+  border-top: 2px solid #004b8d;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Ministry_of_Culture_India.svg/1280px-Ministry_of_Culture_India.svg.png" alt="Ministry of Culture, Government of India " class="logo" alt="Ministry of Culture Logo"><br>
+
+    <h1>Ministry of Culture, Government of India</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="heritage.html" class="active">Heritage</a></li>
+      <li><a href="grants.html">Grants</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav><br>
+  <hr>
+
+  <div class="hero">
+    <h2>Preserving India's Timeless Heritage</h2>
+    <p>Explore India's ancient monuments, art, and traditions that reflect the depth of our cultural identity and civilizational excellence.</p>
+  </div>
+
+  <section>
+    <h3>About Heritage Conservation</h3>
+    <p>The Ministry of Culture, Government of India, is committed to preserving and promoting India’s diverse heritage. Through initiatives focused on conservation, awareness, and restoration, we ensure that India’s historical legacy continues to inspire generations.</p>
+
+    <div class="cards">
+      <div class="card">
+        <img src="https://saishishirtours.in/wp-content/uploads/2023/10/historical-monuments-768x480.png" alt="Monuments">
+        <h4>Monuments</h4>
+        <p>Protecting iconic structures such as temples, forts, and ancient ruins that tell the story of India’s glorious past.</p>
+      </div>
+      <div class="card">
+        <img src="https://indianartideas.in//articleimages/1583921892BeFunky-collage(1).jpg" alt="Art">
+        <h4>Art & Sculpture</h4>
+        <p>Promoting traditional art forms, sculpture, and craftsmanship that represent India’s creative heritage.</p>
+      </div>
+      <div class="card">
+        <img src="https://static2.tripoto.com/media/filter/nl/img/1358046/TripDocument/1616489138_untitled_design_1.png" alt="Festivals">
+        <h4>Festivals & Culture</h4>
+        <p>Celebrating cultural festivals and practices that unite communities and showcase India’s living traditions.</p>
+      </div>
+    </div>
+  </section>
+ 
+  <div class="gallery">
+    <h3>Heritage in Pictures</h3>
+    <div class="gallery-grid">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Taj-Mahal.jpg" alt="Heritage 1">
+      <img src="https://blog.novatr.com/hubfs/Temple%20Architecture%20in%20India.webp" alt="Heritage 2">
+      <img src="https://c9admin.cottage9.com/uploads/2435/Tracing-The-Origins-Of-Ancient-Indian-Art-Paintings.jpg" alt="Heritage 3">
+      <img src="https://imagedelivery.net/y9EHf1toWJTBqJVsQzJU4g/www.indianholiday.com/2025/06/Ganesh-Chathurthi.jpg/w=750" alt="Heritage 4">
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Ministry of Culture, Government of India
+   
+  </footer>
+
+</body>
+</html>
