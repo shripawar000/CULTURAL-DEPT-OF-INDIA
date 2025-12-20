@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cultural Department of India</title>
+  <link rel="stylesheet" href="styles.css">  
+</head>
+<body>
+    <header>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Ministry_of_Culture_India.svg/1280px-Ministry_of_Culture_India.svg.png" alt="Ministry of Culture, Government of India " class="logo">
+
+      <h1>Ministry of Culture, Government of India</h1>
+      <nav class="taskbar">
+           <div><a href="index.html">Home</a></div>
+           <div><a href="events.html">Events</a></div>
+           <div><a href="heritage.html">Heritage</a></div>
+           <div><a href="grants.html">Grants</a></div>
+           <div><a href="contact.html">Contact</a></div>
+      </nav>
+    </header>
+    <section class="hero">
+      <h2>Contact Us</h2>
+
+      <p class="contact-info">
+         📍 **Address:**  
+        Ministry of Culture, Government of India, New Delhi – 110001  
+      <br><br>
+        📞 **Phone:** +91 011-2469 1111  
+      <br>
+        ✉️ **Email:** culture@gov.in  
+      </p>
+    </section>
+    <div class="form-box">
+      <h3>Send Us a Message</h3>
+    
+      <form id="suggestion" onsubmit="return suggestform()">
+
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <input type="text" id="subject" placeholder="Subject" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+
+      </form>
+
+      <p id="msg"></p>
+
+    </div>
+
+
+    <footer>
+       © 2025 Ministry of Culture, Government of India
+    </footer>
+    <script>
+      function suggestform(){
+        let name = document.getElementById("name").value.trim();
+        let email = document.getElementById("email").value.trim();
+        let subject  = document.getElementById("subject").value.trim();
+        let message = document.getElementById("message").value.trim();
+        let msg = document.getElementById("msg");
+
+        if(name === ""){
+          alert("Enter your name!");
+          return false;
+        }
+        const emailpattern= /^[^\s@]+@[^\s@]+\.[^\s@]+$/ ;
+        if(email === "" || !emailpattern.test(email)){
+           alert("Enter email or if entered ,Enter it correctly!");
+           return false;
+        }
+        if(subject === ""){
+          alert("Enter the subject!");
+          return false;
+        }
+        if(message === ""){
+          alert("Enter the message!");
+          return false;
+        }
+         alert(`✅ Message sent Successfully!\n\nThank you, ${name}.`);
+
+        msg.style.color = "black";
+        msg.style.display = "block";
+        msg.className = "success";  
+        msg.innerHTML = `Successfully message sent !`;
+
+        document.getElementById("suggestion").reset();
+        return false;
+
+    }
+          
+    </script>
+    
+</body>
